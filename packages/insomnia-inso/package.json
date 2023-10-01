@@ -1,10 +1,10 @@
 {
   "private": true,
   "name": "insomnia-inso",
-  "version": "2023.5.8",
+  "version": "2023.5.9",
   "homepage": "https://insomnia.rest",
   "description": "A CLI for Insomnia - The Collaborative API Design Tool",
-  "author": "Kong <office@konghq.com>",
+  "author": "Originall by Kong <office@konghq.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

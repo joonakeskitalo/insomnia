@@ -2,8 +2,8 @@
   "private": true,
   "name": "insomnia-testing",
   "license": "Apache-2.0",
-  "version": "2023.5.8",
-  "author": "Kong <office@konghq.com>",
+  "version": "2023.5.9",
+  "author": "Originall by Kong <office@konghq.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kong/insomnia.git",
