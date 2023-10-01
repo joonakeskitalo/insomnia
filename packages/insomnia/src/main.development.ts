@@ -14,8 +14,7 @@ import { registerElectronHandlers } from './main/ipc/electron';
 import { registergRPCHandlers } from './main/ipc/grpc';
 import { registerMainHandlers } from './main/ipc/main';
 import { registerCurlHandlers } from './main/network/curl';
-import { registerWebSocketHandlers } from './main/network/websocket';
-import { initializeSentry, sentryWatchAnalyticsEnabled } from './main/sentry';
+import { registerWebSocketHandlers } from "./main/network/websocket";
 import { checkIfRestartNeeded } from './main/squirrel-startup';
 import * as updates from './main/updates';
 import * as windowUtils from './main/window-utils';
@@ -23,7 +22,7 @@ import * as models from './models/index';
 import type { Stats } from './models/stats';
 import type { ToastNotification } from './ui/components/toast';
 
-initializeSentry();
+
 
 // Handle potential auto-update
 if (checkIfRestartNeeded()) {
@@ -92,7 +91,6 @@ app.on('ready', async () => {
   // Init some important things first
   await database.init(models.types());
   await _createModelInstances();
-  sentryWatchAnalyticsEnabled();
   windowUtils.init();
   await _launchApp();
 
