@@ -308,7 +308,7 @@ const Root = () => {
                 <div className="flex w-[50px] py-2">
                   <InsomniaAILogo />
                 </div>
-                {!isLoggedIn() ? <GitHubStarsButton /> : null}
+
               </div>
               <div className="flex gap-2 flex-nowrap items-center justify-center">
                 {workspaceData && (
